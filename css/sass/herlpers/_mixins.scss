@@ -1,0 +1,41 @@
+// mixin of prefixer
+@mixin prefexer($pres,$prop,$val){
+    @each $pre in $pres{
+        #{'-'+$pre+'-'+$prop}:$val;
+    }
+    #{$prop}:$val;
+}
+
+// mixin of the style of btn outline
+@mixin btn-outline($color){
+    color:$main-color;
+    background-color: white;
+    border-width: 1px;
+    border-style:solid;
+    border-color:$color;
+    transition: .2s;
+    &:hover{
+        background-color: $color;
+        color:white;
+    }
+}
+
+// mixin of the keyframes 
+@mixin keyF($name){
+    @-webkit-keyframes #{$name}{
+        @content;
+    }
+    @-moz-keyframes #{$name}{
+        @content;
+    }
+    @keyframes #{$name}{
+        @content;
+    }
+}
+
+// mixin of circle 
+@mixin circle($length){
+    border-radius:50%;
+    width:$length;
+    height:$length;
+}

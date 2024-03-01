@@ -1,0 +1,74 @@
+
+// container
+
+.container{
+    padding: {
+        left:15px;
+        right:15px;
+    }
+    margin: {
+        left:auto;
+        right:auto;
+    }
+    @media #{$sm}{
+        &{
+            width:540px
+        }
+    }
+    @media #{$md}{
+        &{
+            width:720px;
+        }
+    }
+    @media #{$lg}{
+        &{
+            width:960px;
+        }
+    }
+    @media #{$xl}{
+        &{
+            width:1140px;
+        }
+    }
+}
+
+// grid 
+.row{
+    display: flex;
+    flex-wrap:wrap;
+}
+// columns of grid system
+
+@for $i from 1 through $grid_col{
+    .col-#{$i}{
+        width:($i / $grid_col);
+    }
+}
+@media #{$sm}{
+    @for $i from 1 through $grid_col{
+        .col-sm-#{$i}{
+            width:($i / $grid_col);
+        }
+    }
+}
+@media #{$md}{
+    @for $i from 1 through $grid_col{
+        .col-md-#{$i}{
+            width:($i / $grid_col);
+        }
+    }
+}
+@media #{$lg}{
+    @for $i from 1 through $grid_col{
+        .col-lg-#{$i}{
+            width:($i / $grid_col);
+        }
+    }
+}
+@media #{$lg}{
+    @for $i from 1 through $grid_col{
+        .col-xl-#{$i}{
+            width:($i / $grid_col);
+        }
+    }
+}

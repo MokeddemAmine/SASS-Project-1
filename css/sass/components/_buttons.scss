@@ -1,0 +1,28 @@
+
+
+.btn{
+    margin:1rem;
+    border:none;
+    padding:.5rem 1rem;
+    border-radius:.5rem;
+    cursor:pointer;
+    max-width:200px;
+    &:hover{
+        opacity:.85;
+    }
+    &.btn-main{
+        background-color: $main-color;
+        color:white;
+    }
+    &.btn-secondary{
+        background-color: $second-color;
+        color:white;
+    }
+    
+    &.btn-main-outline{
+        @include btn-outline($main-color);
+    }
+    &.btn-secondary-outline{
+        @include btn-outline($second-color);
+    }
+}
