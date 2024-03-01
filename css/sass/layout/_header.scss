@@ -1,0 +1,54 @@
+header{
+    border-bottom:1px solid $text-color;
+    .navbar{
+        align-items: center;
+        justify-content: space-between;
+        .toggler{
+            border:none;
+            padding:.2rem;
+            background-color: $main-color;
+            border-radius:.5rem;
+            cursor:pointer;
+            @media #{$lg}{
+                display:none;
+            }
+            span{
+                display:block;
+                margin: {
+                    top:.5rem;
+                    bottom:.5rem;
+                }
+                width:50px;
+                height:2px;
+                background-color: white;
+            }
+        }
+        .links{
+            padding:1rem 2rem;
+            border-radius:.5rem;
+            margin-bottom:1rem;
+            display:none;
+            @media #{$lg}{
+                display:flex;
+                justify-content: space-around;
+            }
+            a{
+                display: block;
+                padding: {
+                    top:.5rem;
+                    bottom:.5rem;
+                }
+                @media #{$lg}{
+                    display: inline-block;
+                    padding:0;
+                }
+                color:white;
+                margin:.5rem;
+                &:hover{
+                    color:$text-color;
+                }
+            }
+        }
+    }
+    
+}

@@ -42,6 +42,68 @@
   color: white;
 }
 
+header {
+  border-bottom: 1px solid #9c9c9c;
+}
+header .navbar {
+  align-items: center;
+  justify-content: space-between;
+}
+header .navbar .toggler {
+  border: none;
+  padding: 0.2rem;
+  background-color: #e2494c;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+@media (min-width:992px) {
+  header .navbar .toggler {
+    display: none;
+  }
+}
+header .navbar .toggler span {
+  display: block;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 50px;
+  height: 2px;
+  background-color: white;
+}
+header .navbar .links {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  display: none;
+}
+@media (min-width:992px) {
+  header .navbar .links {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+header .navbar .links a {
+  display: block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: white;
+  margin: 0.5rem;
+}
+@media (min-width:992px) {
+  header .navbar .links a {
+    display: inline-block;
+    padding: 0;
+  }
+}
+header .navbar .links a:hover {
+  color: #9c9c9c;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -75,202 +137,275 @@
 }
 
 .col-1 {
-  width: 0.0833333333;
+  width: 8.3333333333%;
 }
 
 .col-2 {
-  width: 0.1666666667;
+  width: 16.6666666667%;
 }
 
 .col-3 {
-  width: 0.25;
+  width: 25%;
 }
 
 .col-4 {
-  width: 0.3333333333;
+  width: 33.3333333333%;
 }
 
 .col-5 {
-  width: 0.4166666667;
+  width: 41.6666666667%;
 }
 
 .col-6 {
-  width: 0.5;
+  width: 50%;
 }
 
 .col-7 {
-  width: 0.5833333333;
+  width: 58.3333333333%;
 }
 
 .col-8 {
-  width: 0.6666666667;
+  width: 66.6666666667%;
 }
 
 .col-9 {
-  width: 0.75;
+  width: 75%;
 }
 
 .col-10 {
-  width: 0.8333333333;
+  width: 83.3333333333%;
 }
 
 .col-11 {
-  width: 0.9166666667;
+  width: 91.6666666667%;
 }
 
 .col-12 {
-  width: 1;
+  width: 100%;
 }
 
 @media (min-width:576px) {
   .col-sm-1 {
-    width: 0.0833333333;
+    width: 8.3333333333%;
   }
   .col-sm-2 {
-    width: 0.1666666667;
+    width: 16.6666666667%;
   }
   .col-sm-3 {
-    width: 0.25;
+    width: 25%;
   }
   .col-sm-4 {
-    width: 0.3333333333;
+    width: 33.3333333333%;
   }
   .col-sm-5 {
-    width: 0.4166666667;
+    width: 41.6666666667%;
   }
   .col-sm-6 {
-    width: 0.5;
+    width: 50%;
   }
   .col-sm-7 {
-    width: 0.5833333333;
+    width: 58.3333333333%;
   }
   .col-sm-8 {
-    width: 0.6666666667;
+    width: 66.6666666667%;
   }
   .col-sm-9 {
-    width: 0.75;
+    width: 75%;
   }
   .col-sm-10 {
-    width: 0.8333333333;
+    width: 83.3333333333%;
   }
   .col-sm-11 {
-    width: 0.9166666667;
+    width: 91.6666666667%;
   }
   .col-sm-12 {
-    width: 1;
+    width: 100%;
   }
 }
 @media (min-width:768px) {
   .col-md-1 {
-    width: 0.0833333333;
+    width: 8.3333333333%;
   }
   .col-md-2 {
-    width: 0.1666666667;
+    width: 16.6666666667%;
   }
   .col-md-3 {
-    width: 0.25;
+    width: 25%;
   }
   .col-md-4 {
-    width: 0.3333333333;
+    width: 33.3333333333%;
   }
   .col-md-5 {
-    width: 0.4166666667;
+    width: 41.6666666667%;
   }
   .col-md-6 {
-    width: 0.5;
+    width: 50%;
   }
   .col-md-7 {
-    width: 0.5833333333;
+    width: 58.3333333333%;
   }
   .col-md-8 {
-    width: 0.6666666667;
+    width: 66.6666666667%;
   }
   .col-md-9 {
-    width: 0.75;
+    width: 75%;
   }
   .col-md-10 {
-    width: 0.8333333333;
+    width: 83.3333333333%;
   }
   .col-md-11 {
-    width: 0.9166666667;
+    width: 91.6666666667%;
   }
   .col-md-12 {
-    width: 1;
+    width: 100%;
   }
 }
 @media (min-width:992px) {
   .col-lg-1 {
-    width: 0.0833333333;
+    width: 8.3333333333%;
   }
   .col-lg-2 {
-    width: 0.1666666667;
+    width: 16.6666666667%;
   }
   .col-lg-3 {
-    width: 0.25;
+    width: 25%;
   }
   .col-lg-4 {
-    width: 0.3333333333;
+    width: 33.3333333333%;
   }
   .col-lg-5 {
-    width: 0.4166666667;
+    width: 41.6666666667%;
   }
   .col-lg-6 {
-    width: 0.5;
+    width: 50%;
   }
   .col-lg-7 {
-    width: 0.5833333333;
+    width: 58.3333333333%;
   }
   .col-lg-8 {
-    width: 0.6666666667;
+    width: 66.6666666667%;
   }
   .col-lg-9 {
-    width: 0.75;
+    width: 75%;
   }
   .col-lg-10 {
-    width: 0.8333333333;
+    width: 83.3333333333%;
   }
   .col-lg-11 {
-    width: 0.9166666667;
+    width: 91.6666666667%;
   }
   .col-lg-12 {
-    width: 1;
+    width: 100%;
   }
 }
 @media (min-width:992px) {
   .col-xl-1 {
-    width: 0.0833333333;
+    width: 8.3333333333%;
   }
   .col-xl-2 {
-    width: 0.1666666667;
+    width: 16.6666666667%;
   }
   .col-xl-3 {
-    width: 0.25;
+    width: 25%;
   }
   .col-xl-4 {
-    width: 0.3333333333;
+    width: 33.3333333333%;
   }
   .col-xl-5 {
-    width: 0.4166666667;
+    width: 41.6666666667%;
   }
   .col-xl-6 {
-    width: 0.5;
+    width: 50%;
   }
   .col-xl-7 {
-    width: 0.5833333333;
+    width: 58.3333333333%;
   }
   .col-xl-8 {
-    width: 0.6666666667;
+    width: 66.6666666667%;
   }
   .col-xl-9 {
-    width: 0.75;
+    width: 75%;
   }
   .col-xl-10 {
-    width: 0.8333333333;
+    width: 83.3333333333%;
   }
   .col-xl-11 {
-    width: 0.9166666667;
+    width: 91.6666666667%;
   }
   .col-xl-12 {
-    width: 1;
+    width: 100%;
   }
+}
+.d-flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: Tahoma;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-main-color {
+  color: #e2494c !important;
+}
+
+.text-second-color {
+  color: #f1867f !important;
+}
+
+.text-color {
+  color: #9c9c9c;
+}
+
+.bg-main-color {
+  background-color: #e2494c !important;
+}
+
+.bg-second-color {
+  background-color: #f1867f !important;
+}
+
+.list-unstyled {
+  list-style: none !important;
+}
+
+.text-decoration-none {
+  text-decoration: none !important;
+}
+
+.text-bold {
+  font-weight: bold !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+
+.border-main-color {
+  border: 1px solid #e2494c !important;
+}
+
+.border-second-color {
+  border: 1px solid #f1867f !important;
 }/*# sourceMappingURL=homepage.css.map */

@@ -1,4 +1,7 @@
 
+*{
+    @include prefexer(webkit moz,box-sizing,border-box);
+}
 // container
 
 .container{
@@ -41,34 +44,45 @@
 
 @for $i from 1 through $grid_col{
     .col-#{$i}{
-        width:($i / $grid_col);
+        width:percentage($i / $grid_col);
     }
 }
 @media #{$sm}{
     @for $i from 1 through $grid_col{
         .col-sm-#{$i}{
-            width:($i / $grid_col);
+            width:percentage($i / $grid_col);
         }
     }
 }
 @media #{$md}{
     @for $i from 1 through $grid_col{
         .col-md-#{$i}{
-            width:($i / $grid_col);
+            width:percentage($i / $grid_col);
         }
     }
 }
 @media #{$lg}{
     @for $i from 1 through $grid_col{
         .col-lg-#{$i}{
-            width:($i / $grid_col);
+            width:percentage($i / $grid_col);
         }
     }
 }
 @media #{$lg}{
     @for $i from 1 through $grid_col{
         .col-xl-#{$i}{
-            width:($i / $grid_col);
+            width:percentage($i / $grid_col);
         }
     }
+}
+
+// flex class
+.d-flex{
+    display: flex;
+}
+// centrgin elements with flex
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }

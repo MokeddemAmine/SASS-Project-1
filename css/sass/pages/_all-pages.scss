@@ -1,0 +1,58 @@
+
+body{
+    font: {
+        family:Tahoma;
+    }
+}
+// text places
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align:right;
+}
+.text-left{
+    text-align: left;
+}
+// text colors
+.text-main-color{
+    color:$main-color !important;
+}
+.text-second-color{
+    color:$second-color !important;
+}
+.text-color{
+    color:$text-color;
+}
+// background colors
+.bg-main-color{
+    background-color: $main-color !important;
+}
+.bg-second-color{
+    background-color: $second-color !important;
+}
+// list unstyld : withoud any boullet
+.list-unstyled{
+    list-style: none !important;
+}
+
+.text-decoration-none{
+    text-decoration: none !important;
+}
+.text-bold{
+    font-weight:bold !important;
+}
+.text-uppercase{
+    text-transform: uppercase !important;
+}
+.text-capitalize{
+    text-transform: capitalize !important;
+}
+
+// border with diffrent colors
+.border-main-color{
+    border:1px solid $main-color !important;
+}
+.border-second-color{
+    border:1px solid $second-color !important;
+}
