@@ -1,0 +1,100 @@
+/* Start footer section */
+footer{
+    background-color: #cdcdcd;
+    
+    .footer-title{
+        text-transform: capitalize;
+        color:#777;
+        text-align: center;
+        @media #{$md}{
+            text-align:left;
+        }
+    }
+    .footer-content{
+        border-bottom:1px solid $text-color;
+        >:nth-child(2){
+            @media #{$md}{
+                padding: {
+                    right:.5rem;
+                    left:.5rem;
+                }
+            }
+        }
+        .latest-blog{
+            .blog-box{
+                text-align: center;
+                @media #{$md}{
+                    text-align:left;
+                    display: flex;
+                    gap:1rem;
+                    margin-bottom:1rem;
+                }
+                img{
+                    width:150px;
+                    height:150px;
+                }
+                .blog-box-content{
+                    h4{
+                        text-transform: capitalize;
+                        color:$second-color;
+                    }
+                    p{
+                        color:$text-color;
+                    }
+                }
+            }
+            
+        }
+        .details{
+            .details-box{
+                list-style: none;
+                text: {
+                    align:center;
+                    transform: capitalize;
+                }
+                @media #{$md}{
+                    text-align:left;
+                }
+                color:$text-color;
+                padding:0;
+                margin-bottom:1.5rem;
+                li{
+                    .email{
+                        color:$main-color;
+                        text-transform: lowercase;
+                    }
+                }
+            }
+        }
+        .contact-us{
+            form{
+                text-align: center;
+                @media #{$md}{
+                    text-align:left;
+                }
+                textarea{
+                    height:120px;
+                }
+                .btn{
+                    margin:0;
+                }
+            }
+        }
+    }
+    .copyright{
+        margin-top:1rem;
+        text-align:center;
+        color:$text-color;
+        text-transform: capitalize;
+        @media #{$md}{
+            text-align:left;
+            display: flex;
+            justify-content: space-between;
+        }
+        .copyright-text{
+            margin-bottom:2rem;
+        }
+
+    }
+}
+/* End footer section */
