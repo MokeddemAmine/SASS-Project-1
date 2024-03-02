@@ -64,7 +64,16 @@ body{
 
 .circular{
     display:block;
-    height:600px;
+    height:200px;
+    @media #{$sm}{
+        height:300px;
+    }
+    @media #{$md}{
+        height:400px;
+    }
+    @media #{$lg}{
+        height:600px;
+    }
     width:100%;
     position:relative;
     overflow: hidden;
@@ -105,5 +114,45 @@ body{
                 height:100%;
             }
         }
+    }
+}
+
+// heading title of all section
+.heading-title{
+    position:relative;
+    h2{
+        text-align:center;
+        background-color: $main-color;
+        max-width:400px;
+        margin: {
+            top:2rem;
+            bottom:2rem;
+            left:auto;
+            right:auto;
+        }
+        padding: .5rem 1rem;
+        border-radius:.5rem;
+        text-transform: capitalize;
+        color:#eff;
+    }
+    &::before{
+        content:'';
+        position:absolute;
+        top:50%;
+        width:100%;
+        height:1px;
+        background-color: #dedede;
+        z-index: -1;
+    }
+}
+// global style of input field
+.input-form{
+    width:100%;
+    padding:.5rem 1rem;
+    border:none;
+    border-radius:.5rem;
+    margin-bottom:1rem;
+    &:focus{
+        outline:none;
     }
 }

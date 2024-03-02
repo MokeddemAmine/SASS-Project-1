@@ -416,10 +416,25 @@ body {
 
 .circular {
   display: block;
-  height: 600px;
+  height: 200px;
   width: 100%;
   position: relative;
   overflow: hidden;
+}
+@media (min-width:576px) {
+  .circular {
+    height: 300px;
+  }
+}
+@media (min-width:768px) {
+  .circular {
+    height: 400px;
+  }
+}
+@media (min-width:992px) {
+  .circular {
+    height: 600px;
+  }
 }
 .circular .circular-indicators {
   position: absolute;
@@ -458,4 +473,226 @@ body {
 .circular .circular-inner .circular-item img {
   width: 100%;
   height: 100%;
+}
+
+.heading-title {
+  position: relative;
+}
+.heading-title h2 {
+  text-align: center;
+  background-color: #e2494c;
+  max-width: 400px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-transform: capitalize;
+  color: #eff;
+}
+.heading-title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  background-color: #dedede;
+  z-index: -1;
+}
+
+.input-form {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+.input-form:focus {
+  outline: none;
+}
+
+/* Start Service section */
+.services .service-content .service-box {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+@media (min-width:992px) {
+  .services .service-content .service-box {
+    text-align: left;
+  }
+}
+.services .service-content .service-box .title {
+  text-transform: capitalize;
+}
+.services .service-content .service-box .title i {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+@media (min-width:992px) {
+  .services .service-content .service-box .title i {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+}
+.services .service-content .service-box .desc {
+  color: #9c9c9c;
+}
+.services .service-content .service-box .link {
+  color: #f1867f;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+/* End Service section */
+/* Start Our players section */
+.players .players-content .player-box {
+  padding: 1rem;
+  text-align: center;
+}
+@media (min-width:768px) {
+  .players .players-content .player-box {
+    text-align: left;
+  }
+}
+.players .players-content .player-box .player-image {
+  width: 100%;
+}
+.players .players-content .player-box .player-name {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.players .players-content .player-box .player-name span {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+.players .players-content .player-box .player-desc {
+  color: #9c9c9c;
+  line-height: 1.8;
+}
+.players .players-content .player-box .player-link {
+  color: #f1867f;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.players .players-content .player-box .player-link:hover {
+  color: #e2494c;
+}
+
+/* End Our players section */
+/* Start our galery section */
+.galery .galery-box {
+  padding: 1rem;
+}
+.galery .galery-box img {
+  width: 100%;
+}
+
+/* End our galery section */
+/* Start footer section */
+footer {
+  background-color: #cdcdcd;
+}
+footer .footer-title {
+  text-transform: capitalize;
+  color: #777;
+  text-align: center;
+}
+@media (min-width:768px) {
+  footer .footer-title {
+    text-align: left;
+  }
+}
+footer .footer-content {
+  border-bottom: 1px solid #9c9c9c;
+}
+@media (min-width:768px) {
+  footer .footer-content > :nth-child(2) {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}
+footer .footer-content .latest-blog .blog-box {
+  text-align: center;
+}
+@media (min-width:768px) {
+  footer .footer-content .latest-blog .blog-box {
+    text-align: left;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+footer .footer-content .latest-blog .blog-box img {
+  width: 150px;
+  height: 150px;
+}
+footer .footer-content .latest-blog .blog-box .blog-box-content h4 {
+  text-transform: capitalize;
+  color: #f1867f;
+}
+footer .footer-content .latest-blog .blog-box .blog-box-content p {
+  color: #9c9c9c;
+}
+footer .footer-content .details .details-box {
+  list-style: none;
+  text-align: center;
+  text-transform: capitalize;
+  color: #9c9c9c;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+@media (min-width:768px) {
+  footer .footer-content .details .details-box {
+    text-align: left;
+  }
+}
+footer .footer-content .details .details-box li .email {
+  color: #e2494c;
+  text-transform: lowercase;
+}
+footer .footer-content .contact-us form {
+  text-align: center;
+}
+@media (min-width:768px) {
+  footer .footer-content .contact-us form {
+    text-align: left;
+  }
+}
+footer .footer-content .contact-us form textarea {
+  height: 120px;
+}
+footer .footer-content .contact-us form .btn {
+  margin: 0;
+}
+footer .copyright {
+  margin-top: 1rem;
+  text-align: center;
+  color: #9c9c9c;
+  text-transform: capitalize;
+}
+@media (min-width:768px) {
+  footer .copyright {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+footer .copyright .copyright-text {
+  margin-bottom: 2rem;
+}
+
+/* End footer section */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #9c9c9c;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f1867f;
+  border-radius: 20px;
 }/*# sourceMappingURL=homepage.css.map */
