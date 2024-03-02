@@ -42,6 +42,9 @@ body{
 .text-bold{
     font-weight:bold !important;
 }
+.text-italic{
+    font-style:italic !important;
+}
 .text-uppercase{
     text-transform: uppercase !important;
 }
@@ -55,4 +58,52 @@ body{
 }
 .border-second-color{
     border:1px solid $second-color !important;
+}
+
+// style of circular
+
+.circular{
+    display:block;
+    height:600px;
+    width:100%;
+    position:relative;
+    overflow: hidden;
+    .circular-indicators{
+        position:absolute;
+        bottom:5px;
+        left:50%;
+        transform: translateX(-50%);
+        padding:0;
+        z-index:1000;
+        >*{
+            display: inline-block;
+            width:20px;
+            height:20px;
+            background-color: #ddd;
+            border:1px solid #555;
+            border-radius:50%;
+            cursor:pointer;
+            &:hover{
+                background-color: white;
+            }
+        }
+        .active{
+            background-color: $second-color;
+        }
+    }
+    .circular-inner{
+        height:100%;
+        width:100%;
+        .circular-item{
+            width:100%;
+            height:100%;
+            position:absolute;
+            top:0;
+            transition: 1s;
+            img{
+                width:100%;
+                height:100%;
+            }
+        }
+    }
 }
